@@ -1,0 +1,96 @@
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    height: 60px;
+    align-items: center;
+    border-bottom: 0.5px solid #72717127;
+    .searchContainer {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        .inputField {
+            background-color: transparent !important;
+            border-radius: 10px;
+            box-shadow: none !important;
+            border: 0.5px solid #c69b7b !important;
+            .searchInput {
+                color: #c69b7b;
+            }
+            input {
+                background-color: transparent !important;
+                caret-color: #c69b7b;
+                color: #c69b7b;
+
+                &::placeholder {
+                    color: #c69b7b;
+                    font-size: 13px;
+                }
+                &:focus {
+                    background-color: transparent !important;
+                    border: 0;
+                    outline: 0;
+                    box-shadow: none !important;
+                }
+                &:hover {
+                    box-shadow: none !important;
+                }
+            }
+            &:hover {
+                box-shadow: none !important;
+            }
+        }
+    }
+    .navbarItems {
+        flex: 6;
+        display: flex;
+        justify-content: flex-end;
+
+        .navList {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            .item {
+                color: #c69b7b;
+                font-size: 16px;
+                cursor: pointer;
+                box-shadow: 0 0 5px #ccc;
+                padding: 5px;
+                min-width: 35px;
+                max-width: 35px;
+                display: inline-block;
+                max-height: 35px;
+                min-height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon {
+                    font-size: 20px;
+                }
+                .avatar {
+                    img {
+                        height: 80%;
+                    }
+                }
+                &.counterContainer {
+                    position: relative;
+                    .counter {
+                        position: absolute;
+                        background-color: #c69b7b;
+                        color: #fff;
+                        width: 17px;
+                        height: 17px;
+                        border-radius: 50%;
+                        right: -2px;
+                        top: -2px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 10px;
+    border-right: 0.5px solid #72717127;
+    position: relative;
+    // max-width: 337px;
+    width: 100%;
+
+    flex: 2;
+    .top {
+        height: 60px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0.5px solid #72717127;
+        margin-bottom: 10px;
+        .iconContainer {
+            font-size: 25px;
+            padding: 5px;
+            width: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 7px;
+            box-shadow: 0 0 5px #eee;
+            .icon {
+                color: #c69b7b;
+            }
+        }
+        h2 {
+            color: #c69b7b;
+            margin: 0;
+        }
+    }
+    .center {
+        padding: 15px;
+        .sidebarListContainer {
+            list-style: none;
+
+            .linkItem {
+                .item {
+                    margin-bottom: 10px;
+                    padding: 7px 10px;
+                    transition: background 0.4s ease-in-out;
+                    border-radius: 10px;
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    color: #c69b7b;
+                    font-size: 17px;
+                    transition: color 0.4s ease-in-out;
+                    &:hover,
+                    &.active {
+                        background-color: #c4550023;
+                        .linkItem {
+                            color: #c76d29;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        padding: 15px 25px;
+
+        h4 {
+            color: #c69b7b;
+            font-weight: 500;
+        }
+        .modeSelection {
+            display: flex;
+            gap: 13px;
+            div {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                cursor: pointer;
+                box-shadow: 0 0 7px 0px #c69b7b;
+                &:first-child {
+                    background-color: #fff;
+                }
+                &:last-child {
+                    background-color: #222;
+                }
+            }
+        }
+    }
+}

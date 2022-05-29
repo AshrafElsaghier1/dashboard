@@ -1,0 +1,20 @@
+.home {
+    display: flex;
+    width: 100%;
+    .homeContainer {
+        color: #c69b7b;
+        flex: 6;
+        .widgets {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        .chart {
+            padding: 15px;
+            box-shadow: 0 0 7px #b36d38;
+            max-width: 85%;
+            margin: 30px auto;
+            border-radius: 20px;
+        }
+    }
+}

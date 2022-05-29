@@ -1,0 +1,42 @@
+.newUserContainer {
+    display: flex;
+    width: 100%;
+    .newUserForm {
+        flex: 6;
+        text-align: center;
+
+        .title {
+            font-size: 20px;
+            color: #c69b7b;
+            margin-top: 10px;
+        }
+        .userForm {
+            background-color: #c69b7b;
+            max-width: 400px;
+            height: auto;
+            margin: 10px auto;
+            padding: 15px 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 5px #333;
+            label {
+                text-align: left;
+            }
+            input {
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+        .submit {
+            width: 100%;
+            border-radius: 10px;
+            background-color: #a54a0594;
+            color: #fff;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                background-color: #008000c7;
+                border-color: #008000c7;
+            }
+        }
+    }
+}

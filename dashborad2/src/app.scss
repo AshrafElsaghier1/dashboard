@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Raleway", sans-serif;
+}
+ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.app.dark {
+    background-color: #222;
+    .homeContainer {
+        background-color: #222;
+    }
+
+    .navbarContainer {
+        background-color: #222;
+    }
+    .sidebar {
+        background: #222;
+    }
+    .dataTableContainer {
+        .main {
+            flex: 6;
+            .tableSection {
+                .linkContainer {
+                    box-shadow: 0 0 7px #fff;
+                }
+                .tableContainer {
+                    box-shadow: 0 0 7px #fff;
+
+                    .usersTable {
+                        background-color: #222;
+                        .ant-table-thead > tr > th {
+                            background-color: #222;
+                        }
+                        .ant-table-content {
+                            background-color: #222;
+                            tr {
+                                td {
+                                    border-bottom: 0.5px solid #cccccc49 !important;
+                                }
+                                &:hover {
+                                    td {
+                                        background-color: #4646464d;
+                                    }
+                                }
+                            }
+                        }
+                        .ant-pagination {
+                            .ant-pagination-item-link {
+                                background-color: #222;
+                                color: #c69b7b;
+                                border-color: #c69b7b;
+                            }
+                            .ant-pagination-item-active {
+                                background-color: #c69b7b;
+                                border-color: #c69b7b;
+
+                                a {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

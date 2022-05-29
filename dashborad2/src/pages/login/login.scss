@@ -1,0 +1,60 @@
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #c69b7b;
+    .loginForm {
+        max-width: 300px;
+        height: 350px;
+        width: 100%;
+        box-shadow: 0 0 10px 2px #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 15px;
+        flex-direction: column;
+        .ant-form-item {
+            width: 100%;
+
+            .inputField {
+                background-color: transparent !important;
+                padding: 10px;
+                border-radius: 15px;
+                box-shadow: none;
+                border-color: #fff;
+                .icon {
+                    color: #fff;
+                }
+                input {
+                    background-color: transparent !important;
+                    caret-color: #fff;
+                    width: 100%;
+                    height: 100%;
+                    &::placeholder {
+                        color: #fff;
+                        text-transform: capitalize;
+                        padding: 0 4px;
+                    }
+                    &:focus {
+                        background-color: transparent !important;
+                    }
+                    &:-webkit-autofill,
+                    &:-webkit-autofill:hover,
+                    &:-webkit-autofill:focus,
+                    &:-webkit-autofill:active {
+                        background-color: green !important;
+                        box-shadow: none !important;
+                    }
+                }
+
+                &:hover {
+                    border-color: #fff;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.dataTableContainer {
+    display: flex;
+    width: 100%;
+    .main {
+        flex: 6;
+        margin-bottom: 15px;
+        .tableSection {
+            padding: 0 15px;
+            .linkContainer {
+                padding: 10px 10px 10px 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 0.5px solid #cccccc49;
+                box-shadow: 0 0 7px #8b8383a1;
+                border-radius: 15px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                h4 {
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    color: #c69b7b;
+                }
+                .link {
+                    background-color: #c69b7b;
+                    padding: 5px 12px;
+                    border-radius: 10px;
+                    color: #fff;
+                    transition: 0.5s ease-in-out;
+                    font-weight: 500;
+                    &:hover {
+                        background-color: rgba(#c69b7b, 0.6);
+                    }
+                }
+            }
+            .tableContainer {
+                text-align: center;
+                padding: 10px;
+                box-shadow: 0 0 7px #8b8383a1;
+                border-radius: 15px;
+                .title {
+                    color: #c69b7b;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                }
+                .usersTable {
+                    color: #c69b7b;
+                    .action-btn {
+                        margin-right: 3px;
+                    }
+                    .ant-table-thead > tr > th {
+                        transition: none;
+                        color: #c69b7b;
+                        border-bottom: 0.5px solid #cccccc49 !important;
+                    }
+                    .ant-table-content {
+                        color: #c69b7b;
+                    }
+                    .ant-pagination {
+                        margin-top: 10px !important;
+                        .ant-pagination-item-link {
+                            transition: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
